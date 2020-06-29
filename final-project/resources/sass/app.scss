@@ -1,0 +1,73 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 2em;
+}
+
+nav {
+  display: flex;
+  margin-bottom: 2em;
+
+  a {
+      padding: 0.25em 1em;
+      border: 1px solid gray;
+      transition: all 0.5s ease;
+
+      &:hover {
+          background-color: rgb(141, 233, 228);
+      }
+  }
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
+
+.review-form {
+  margin-top: 1em;
+  border-top: 1px solid #999999;
+  
+  h2 {
+      margin: 0.5em 0 0.25em;
+  }
+
+  .form-group {
+      margin-bottom: 0.5em;
+
+      label {
+          color: #999999;
+      }
+
+      input,
+      textarea {
+          margin-top: 0.5em;
+          border: 1px solid #999999;
+          border-radius: 0.125em;
+
+          &[type="number"] {
+              width: 3em;
+          }
+      }
+  }
+}
+
+.related-books {
+  display: flex;
+  flex-direction: row;
+
+  & > div {
+      width: 25%;
+  }
+}
