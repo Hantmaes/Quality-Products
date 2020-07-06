@@ -13,6 +13,7 @@ body {
 
 nav {
   display: flex;
+  justify-content: flex-end;
   margin-bottom: 2em;
 }
 nav a {
