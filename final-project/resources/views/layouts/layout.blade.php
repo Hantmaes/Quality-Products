@@ -11,7 +11,7 @@
 </head>
 <body>
   
-  {{-- @include('partials.navigation') --}}
+  @include('partials.navigation')
 
   @yield('content')
   

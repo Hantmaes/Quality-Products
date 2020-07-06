@@ -19,3 +19,6 @@ Route::get('/', function () {
 
 Route::get('/beers', 'BeerController@index')->name('beers.index');
 Route::get('/beers/{beer_id}', 'BeerController@show');
+
+Route::get('/companies', 'CompanyController@index')->name('companies.index');
+Route::get('/companies/{company_id}', 'CompanyController@show');
