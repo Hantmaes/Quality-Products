@@ -19,3 +19,7 @@ Route::get('/', function () {
 
 Route::get('/beers', 'BeerController@index')->name('beers.index');
 Route::get('/beers/{beer_id}', 'BeerController@show');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

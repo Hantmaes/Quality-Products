@@ -20,6 +20,7 @@ class CreateBeersTable extends Migration
             $table->string('category');
             $table->float('alcohol_content');
             $table->text('description');
+            $table->string('price');
             $table->string('image');
             $table->timestamps();
         });
