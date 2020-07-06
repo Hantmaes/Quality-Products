@@ -22,6 +22,7 @@ class CreateBeersTable extends Migration
             $table->text('description');
             $table->string('price');
             $table->string('image');
+            $table->string('price');
             $table->timestamps();
         });
     }
