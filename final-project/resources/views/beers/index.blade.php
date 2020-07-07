@@ -14,6 +14,9 @@
         <a href="beers/{{ $beer->id }}">more detail...</a>
     </div>
 @endforeach
+
+
 </div>
+{{ $beers->links()}}
 
 @endsection

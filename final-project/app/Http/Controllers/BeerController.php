@@ -11,6 +11,7 @@ class BeerController extends Controller
         
         
         $beers = Beer::all();
+        $beers = Beer::paginate(10);
 
         return view('beers.index', compact('beers'));
     }
@@ -22,5 +23,11 @@ class BeerController extends Controller
 
 
         return view('beers.show', compact('beer'));
+    }
+
+    public function checkout()
+    {   
+        
+        return view('beers.checkout');
     }
 }

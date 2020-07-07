@@ -13,18 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'MainPageController@slider', function () {
     return view('welcome');
-});
+})->name('main');
 
 Route::get('/beers', 'BeerController@index')->name('beers.index');
 Route::get('/beers/{beer_id}', 'BeerController@show');
+Route::get('/checkout', 'BeerController@checkout');
+Route::get('/checkout', 'BeerController@checkout');
 
-<<<<<<< HEAD
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-=======
 Route::get('/companies', 'CompanyController@index')->name('companies.index');
 Route::get('/companies/{company_id}', 'CompanyController@show');
->>>>>>> 3af2999f13d7de4c3711e657d206abb0b32783a8
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

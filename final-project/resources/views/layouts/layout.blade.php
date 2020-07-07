@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="/watercolor-drink-5233841_1920_favicon.png" type="image/gif" sizes="32x32">
   <title>Final project</title>
@@ -11,7 +11,7 @@
 </head>
 <body>
   
-  @include('partials.navigation')
+  @include('partials.header')
 
   @yield('content')
   

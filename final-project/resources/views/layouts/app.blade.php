@@ -73,6 +73,7 @@
         </nav>
 
         <main class="py-4">
+            @include('partials.navigation')
             @yield('content')
         </main>
     </div>

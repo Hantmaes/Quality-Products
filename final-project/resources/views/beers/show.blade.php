@@ -13,5 +13,7 @@
   <p>Category: {{ $beer->category }}</p>
 </div>
 
+
+
 @endsection
 
