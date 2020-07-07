@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+
 <h1>Your Cart</h1>
 
 @foreach($cartItems as $cartItem)
@@ -9,3 +13,5 @@
         <p>Count: {{ $cartItem->count }}</p>
     </div>
 @endforeach
+
+@endsection
