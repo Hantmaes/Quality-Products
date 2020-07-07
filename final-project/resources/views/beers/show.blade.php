@@ -20,6 +20,8 @@
 
     <button>Add to cart</button>
 </form>
+
+<button><a href="/checkout">shipping detail</a></button>
 </div>
 
 @endsection

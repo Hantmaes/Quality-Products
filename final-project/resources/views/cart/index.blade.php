@@ -14,4 +14,6 @@
     </div>
 @endforeach
 
+<button><a href="/checkout">shipping detail</a></button>
+
 @endsection
