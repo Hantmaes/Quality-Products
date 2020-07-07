@@ -64,7 +64,6 @@ body {
   background-color: #f8fafc;
 }
 
-<<<<<<< HEAD
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -399,12 +398,6 @@ h6, .h6 {
   font-size: 5.5rem;
   font-weight: 300;
   line-height: 1.2;
-=======
-nav {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 2em;
->>>>>>> 3af2999f13d7de4c3711e657d206abb0b32783a8
 }
 
 .display-3 {
@@ -540,78 +533,12 @@ pre code {
   overflow-y: scroll;
 }
 
-<<<<<<< HEAD
 .container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-=======
-.main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.main .beer-list {
-  width: 300px;
-  margin: 30px;
-  text-align: center;
-  line-height: 2em;
-}
-.main .beer-list img {
-  width: 300px;
-  height: 450px;
-}
-
-.detail-beer {
-  text-align: center;
-  margin: 50px 300px;
-  line-height: 2em;
-}
-.detail-beer img {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 450px;
-  height: 600px;
-}
-.detail-beer #description-beers {
-  margin-right: 150px;
-  margin-left: 150px;
-}
-
-.main-company {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.main-company .company-list {
-  width: 300px;
-  margin: 30px;
-  text-align: center;
-  line-height: 2em;
-}
-.main-company .company-list img {
-  width: 300px;
-  height: 450px;
-}
-
-.detail-company {
-  text-align: center;
-  margin: 50px 50px;
-  line-height: 2em;
-}
-.detail-company img {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 450px;
-  height: 600px;
-}
-
-.review-form {
-  margin-top: 1em;
-  border-top: 1px solid #999999;
->>>>>>> 3af2999f13d7de4c3711e657d206abb0b32783a8
 }
 @media (min-width: 576px) {
   .container {
@@ -10060,5 +9987,127 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 2em;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2em;
+}
+nav a {
+  padding: 0.25em 1em;
+  border: 1px solid gray;
+  transition: all 0.5s ease;
+}
+nav a:hover {
+  background-color: #8de9e4;
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main .beer-list {
+  width: 300px;
+  margin: 30px;
+  text-align: center;
+  line-height: 2em;
+}
+.main .beer-list img {
+  width: 300px;
+  height: 450px;
+}
+
+.detail-beer {
+  text-align: center;
+  margin: 50px 300px;
+  line-height: 2em;
+}
+.detail-beer img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 450px;
+  height: 600px;
+}
+.detail-beer #description-beers {
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.main-company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main-company .company-list {
+  width: 300px;
+  margin: 30px;
+  text-align: center;
+  line-height: 2em;
+}
+.main-company .company-list img {
+  width: 300px;
+  height: 450px;
+}
+
+.detail-company {
+  text-align: center;
+  margin: 50px 50px;
+  line-height: 2em;
+}
+.detail-company img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 450px;
+  height: 600px;
+}
+
+.review-form {
+  margin-top: 1em;
+  border-top: 1px solid #999999;
+}
+.review-form h2 {
+  margin: 0.5em 0 0.25em;
+}
+.review-form .form-group {
+  margin-bottom: 0.5em;
+}
+.review-form .form-group label {
+  color: #999999;
+}
+.review-form .form-group input,
+.review-form .form-group textarea {
+  margin-top: 0.5em;
+  border: 1px solid #999999;
+  border-radius: 0.125em;
+}
+.review-form .form-group input[type=number],
+.review-form .form-group textarea[type=number] {
+  width: 3em;
+}
+
+.related-books {
+  display: flex;
+  flex-direction: row;
+}
+.related-books > div {
+  width: 25%;
 }
 /*# sourceMappingURL=app.css.map*/
