@@ -20,11 +20,11 @@ Route::get('/', function () {
 Route::get('/beers', 'BeerController@index')->name('beers.index');
 Route::get('/beers/{beer_id}', 'BeerController@show');
 
-<<<<<<< HEAD
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-=======
 Route::get('/companies', 'CompanyController@index')->name('companies.index');
 Route::get('/companies/{company_id}', 'CompanyController@show');
->>>>>>> 3af2999f13d7de4c3711e657d206abb0b32783a8
+
+Route::post('/add-to-cart', 'CartController@add');
+Route::get('/cart', 'CartController@index');
