@@ -49839,8 +49839,13 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 __webpack_require__(/*! C:\Web\bootcamp\projects\Quality-Products\final-project\resources\js\app.js */"./resources/js/app.js");
 module.exports = __webpack_require__(/*! C:\Web\bootcamp\projects\Quality-Products\final-project\resources\sass\app.scss */"./resources/sass/app.scss");
+=======
+__webpack_require__(/*! C:\wamp64\www\bootcamp\final-project\Quality-Products\final-project\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\wamp64\www\bootcamp\final-project\Quality-Products\final-project\resources\sass\app.scss */"./resources/sass/app.scss");
+>>>>>>> 0537f8d41de8ec2f961b814eef5639657d655245
 
 
 /***/ })

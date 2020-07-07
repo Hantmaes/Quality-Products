@@ -10003,6 +10003,7 @@ nav {
   margin-bottom: 2em;
 }
 nav a {
+<<<<<<< HEAD
   color: #636b6f;
   padding: 0 25px;
   font-size: 13px;
@@ -10010,6 +10011,14 @@ nav a {
   letter-spacing: 0.1rem;
   text-decoration: none;
   text-transform: uppercase;
+=======
+  padding: 0.25em 1em;
+  border: 1px solid gray;
+  transition: all 0.5s ease;
+}
+nav a:hover {
+  background-color: #8de9e4;
+>>>>>>> 0537f8d41de8ec2f961b814eef5639657d655245
 }
 
 h1 {
@@ -10080,12 +10089,15 @@ h2 {
   height: 600px;
 }
 
+<<<<<<< HEAD
 .shipping {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
+=======
+>>>>>>> 0537f8d41de8ec2f961b814eef5639657d655245
 .review-form {
   margin-top: 1em;
   border-top: 1px solid #999999;

@@ -29,6 +29,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/companies', 'CompanyController@index')->name('companies.index');
 Route::get('/companies/{company_id}', 'CompanyController@show');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/add-to-cart', 'CartController@add');
+Route::get('/cart', 'CartController@index');
