@@ -10090,12 +10090,6 @@ h2 {
   height: 600px;
 }
 
-.shipping {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 .review-form {
   margin-top: 1em;
   border-top: 1px solid #999999;
