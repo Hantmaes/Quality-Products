@@ -13,12 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'MainPageController@slider', function () {
     return view('welcome');
-});
+})->name('main');
 
 Route::get('/beers', 'BeerController@index')->name('beers.index');
 Route::get('/beers/{beer_id}', 'BeerController@show');
+Route::get('/checkout', 'BeerController@checkout');
+Route::get('/checkout', 'BeerController@checkout');
+
 
 Auth::routes();
 
@@ -26,10 +29,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/companies', 'CompanyController@index')->name('companies.index');
 Route::get('/companies/{company_id}', 'CompanyController@show');
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/add-to-cart', 'CartController@add');
+Route::get('/cart', 'CartController@index');

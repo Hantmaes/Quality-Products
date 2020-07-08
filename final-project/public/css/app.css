@@ -10003,12 +10003,13 @@ nav {
   margin-bottom: 2em;
 }
 nav a {
-  padding: 0.25em 1em;
-  border: 1px solid gray;
-  transition: all 0.5s ease;
-}
-nav a:hover {
-  background-color: #8de9e4;
+  color: #636b6f;
+  padding: 0 25px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -10028,11 +10029,18 @@ h2 {
   width: 300px;
   margin: 30px;
   text-align: center;
+  margin: 50px 300px;
   line-height: 2em;
 }
 .main .beer-list img {
-  width: 300px;
-  height: 450px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 450px;
+  height: 600px;
+}
+.main .beer-list #description-beers {
+  margin-right: 150px;
+  margin-left: 150px;
 }
 
 .detail-beer {
@@ -10060,11 +10068,14 @@ h2 {
   width: 300px;
   margin: 30px;
   text-align: center;
+  margin: 50px 50px;
   line-height: 2em;
 }
 .main-company .company-list img {
-  width: 300px;
-  height: 450px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 450px;
+  height: 600px;
 }
 
 .detail-company {
@@ -10077,6 +10088,12 @@ h2 {
   margin-bottom: 50px;
   width: 450px;
   height: 600px;
+}
+
+.shipping {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .review-form {
