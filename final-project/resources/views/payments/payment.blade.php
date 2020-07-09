@@ -8,16 +8,26 @@
     <form action="{{route('stripe.store')}}" method="post" id="payment-form">
         @csrf
         <div class="form-row">
+
+            <div>
+            <label for="validationCustom01">Name on card </label>
+            <input type="text" class="form-control" id="validationCustom01" value="Mark Turner" required>
+            </div>
+        
+            <div>
             <label for="card-element">Credit or debit card</label>
             <div id="card-element">
                 <!-- A Stripe Element will be inserted here. -->
             </div>
+        </div>
     
             <!-- Used to display form errors. -->
             <div id="card-errors" role="alert"></div>
+
+            <button id="st-btn">Submit Payment</button>
         </div>
     
-        <button id="st-btn">Submit Payment</button>
+        
     </form>
 </div>
 @endsection
@@ -31,6 +41,20 @@
 
   /* Stripe CSS */
   .StripeElement {
+    box-sizing: border-box;
+    height: 40px;
+    width: 600px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    border: 2px solid blue;
+  }
+
+  .form-control {
     box-sizing: border-box;
     height: 40px;
     width: 600px;
@@ -62,7 +86,7 @@
   }
   form#payment-form {
     background: #f7f8f9;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     padding: 50px;
   }
   button#st-btn {
