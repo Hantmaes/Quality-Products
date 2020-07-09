@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Cartalyst\Stripe\Stripe;
 
+
 class PaymentController extends Controller
 {
     public function store(Request $request){
@@ -16,6 +17,19 @@ class PaymentController extends Controller
             'receipt_email' => "admin@email.com",
         ]);
 
-        return "Payment Created";
+        // return "Payment Created";
+
+        return redirect('/');
+
+        // return response([
+        //     'success_url'=> redirect()->intended('/')->getTargetUrl(),
+        //     'message'=>'success'
+        // ]);
+    }  
+    
+    public function checkout()
+    {   
+        
+        return view('payments.payment');
     }
 }
