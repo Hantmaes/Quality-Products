@@ -36,11 +36,8 @@
 
   @yield('content')
 
-<<<<<<< HEAD
   @include('partials.footer')
-=======
   @yield('js')
->>>>>>> 34d814c96d0e38bc438ae1de8c122c0bf9ab6ad5
   
 </body>
 </html>
