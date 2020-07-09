@@ -23,6 +23,9 @@
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
   <link rel="icon" href="/watercolor-drink-5233841_1920_favicon.png" type="image/gif" sizes="32x32">
+
+  @yield('head')
+
 </head>
 
 <body>
@@ -31,6 +34,8 @@
   
 
   @yield('content')
+
+  @yield('js')
   
 </body>
 </html>
