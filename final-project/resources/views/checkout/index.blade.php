@@ -27,7 +27,7 @@
           <div class="form-group">
           <input type="text" name="telephone" placeholder="Shipping Telephone" class="form-control" />
         </div>
-          <button type="submit" class="btn btn-success" href="" >Checkout</button>
+          <button type="submit" class="btn btn-success" href="/payments" >Checkout</button>
       </div> 
     </form> 
   </div>

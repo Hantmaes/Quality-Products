@@ -41,7 +41,7 @@ class DeliveryAddressController extends Controller
 
         $checkout->save();
 
-        return redirect( action('BeerController@index'));
+        return redirect( action('PaymentController@checkout'));
 
     }
 }
