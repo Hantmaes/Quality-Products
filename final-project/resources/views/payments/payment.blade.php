@@ -2,6 +2,10 @@
 {{-- @extends('layouts.app') --}}
 
 @section('content')
+
+<body>
+    
+
 <div class="links" style="margin-top:20px">
       
       
@@ -9,17 +13,17 @@
         @csrf
         <div class="form-row">
 
-            <div>
+            
             <label for="validationCustom01">Name on card </label>
             <input type="text" class="form-control" id="validationCustom01" value="Mark Turner" required>
-            </div>
+            
         
-            <div>
+            
             <label for="card-element">Credit or debit card</label>
             <div id="card-element">
                 <!-- A Stripe Element will be inserted here. -->
             </div>
-        </div>
+        
     
             <!-- Used to display form errors. -->
             <div id="card-errors" role="alert"></div>
@@ -30,6 +34,8 @@
         
     </form>
 </div>
+
+</body>
 @endsection
 
 
@@ -87,6 +93,7 @@
   form#payment-form {
     background: #f7f8f9;
     /* border: 2px solid blue; */
+    height: 50%;
     padding: 50px;
   }
   button#st-btn {
