@@ -10090,35 +10090,47 @@ h2 {
   height: 600px;
 }
 
-.review-form {
-  margin-top: 1em;
-  border-top: 1px solid #999999;
+.new-container {
+  margin-bottom: 50px;
 }
-.review-form h2 {
-  margin: 0.5em 0 0.25em;
+.new-container .carousel-inner {
+  text-align: center;
+  height: 400px;
+  background-color: #8d8787;
 }
-.review-form .form-group {
-  margin-bottom: 0.5em;
-}
-.review-form .form-group label {
-  color: #999999;
-}
-.review-form .form-group input,
-.review-form .form-group textarea {
-  margin-top: 0.5em;
-  border: 1px solid #999999;
-  border-radius: 0.125em;
-}
-.review-form .form-group input[type=number],
-.review-form .form-group textarea[type=number] {
-  width: 3em;
+.new-container .carousel-inner #main-image {
+  margin-top: 50px;
+  width: 300px;
+  height: 300px;
 }
 
+/* .review-form {
+  margin-top: 1em;
+  border-top: 1px solid #999999;
+  h2 {
+      margin: 0.5em 0 0.25em;
+  }
+  .form-group {
+      margin-bottom: 0.5em;
+      label {
+          color: #999999;
+      }
+      input,
+      textarea {
+          margin-top: 0.5em;
+          border: 1px solid #999999;
+          border-radius: 0.125em;
+          &[type="number"] {
+              width: 3em;
+          }
+      }
+  }
+}
 .related-books {
   display: flex;
   flex-direction: row;
-}
-.related-books > div {
-  width: 25%;
-}
+  & > div {
+      width: 25%;
+  }
+} */
 /*# sourceMappingURL=app.css.map*/

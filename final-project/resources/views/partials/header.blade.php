@@ -1,7 +1,7 @@
 <div class="home-header" >
   <div class="logo" >
     <img src="/images/logo.png" />
-  </div>
+{{--   </div>
 <nav>
 
   @if (Route::has('login'))
@@ -14,14 +14,14 @@
 
       @auth
 
-          {{-- <a href="{{ url('/home') }}">Home</a> --}}
+           <a href="{{ url('/home') }}">Home</a>
           
       @else
-          {{-- <a href="{{ route('login') }}">Login</a> --}}
+          <a href="{{ route('login') }}">Login</a> 
 
-          {{-- @if (Route::has('register'))
+          @if (Route::has('register'))
               <a href="{{ route('register') }}">Register</a>
-          @endif --}}
+          @endif 
 
 
       @endauth
@@ -31,7 +31,7 @@
 
 
 </nav>
-</div>
+</div> --}}
 
 
 <body>
@@ -41,6 +41,11 @@
               {{-- <a class="navbar-brand" href="{{ url('/') }}">
                   {{ config('app.name', 'Laravel') }}
               </a> --}}
+              <a href="{{ url('/') }}">Home</a>
+
+              <a href="{{ route('beers.index') }}">Beers</a>
+          
+              <a href="{{ route('companies.index') }}">Beer-Producers</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                   <span class="navbar-toggler-icon"></span>
               </button>
