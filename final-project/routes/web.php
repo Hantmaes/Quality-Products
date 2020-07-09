@@ -19,8 +19,8 @@ Route::get('/', 'MainPageController@slider', function () {
 
 Route::get('/beers', 'BeerController@index')->name('beers.index');
 Route::get('/beers/{beer_id}', 'BeerController@show');
-Route::get('/checkout', 'BeerController@checkout');
-Route::get('/checkout', 'BeerController@checkout');
+Route::get('/checkout', 'DeliveryAddressController@checkout');
+Route::post('/delivery', 'DeliveryAddressController@store');
 
 
 Auth::routes();
@@ -30,6 +30,7 @@ Route::get('/companies', 'CompanyController@index')->name('companies.index');
 Route::get('/companies/{company_id}', 'CompanyController@show');
 
 Route::post('/add-to-cart', 'CartController@add');
-Route::get('/cart', 'CartController@index');
+Route::get('/cart', 'CartController@index')->name('cart.index');
 
 Route::post('stripe-payment', 'PaymentController@store')->name('stripe.store');
+

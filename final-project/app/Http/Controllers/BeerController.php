@@ -21,13 +21,9 @@ class BeerController extends Controller
 
         $beer = Beer::findOrFail($beer_id);
 
-       
+    
         return view('beers.show', compact('beer'));
     }
 
-    public function checkout()
-    {   
-        
-        return view('beers.checkout');
-    }
+
 }
