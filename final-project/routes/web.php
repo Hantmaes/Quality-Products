@@ -31,3 +31,7 @@ Route::get('/companies/{company_id}', 'CompanyController@show');
 
 Route::post('/add-to-cart', 'CartController@add');
 Route::get('/cart', 'CartController@index')->name('cart.index');
+
+Route::post('stripe-payment', 'PaymentController@store')->name('stripe.store');
+Route::get('/payments', 'PaymentController@checkout')->name('payments.checkout');
+

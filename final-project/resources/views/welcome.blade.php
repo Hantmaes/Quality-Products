@@ -2,6 +2,8 @@
 
 @section('content')
 
+  <script src="https://js.stripe.com/v3/"></script>
+
     <div class="new-container">
         <h1>New Beers</h1>
         <div id="demo" class="carousel slide" data-ride="carousel">
@@ -77,5 +79,13 @@
         </div>
     </div>
 
-
 @endsection
+
+
+
+
+
+
+
+
+
