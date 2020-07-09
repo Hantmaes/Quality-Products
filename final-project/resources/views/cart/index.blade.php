@@ -14,6 +14,36 @@
     </div>
 @endforeach
 
-<button><a href="/checkout">shipping detail</a></button>
+@auth
+@if (Session::has('success_message'))
+    
+<div class="alert alert-success">
+    {{ Session::get('success_message') }}
+</div>
+
+@endif
+
+@if (count($errors) > 0)
+<div class="alert alert-danger">
+    <ul>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+</div>
+@endif
+
+
+
+<button><a href="/checkout">shipping details</a></button>
+@endauth
+
+@guest
+
+<p>
+    Please log in to add shipping details: <a href="{{ route('login') }}">Login</a>
+</p>
+
+@endguest
 
 @endsection

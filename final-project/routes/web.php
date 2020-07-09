@@ -30,4 +30,4 @@ Route::get('/companies', 'CompanyController@index')->name('companies.index');
 Route::get('/companies/{company_id}', 'CompanyController@show');
 
 Route::post('/add-to-cart', 'CartController@add');
-Route::get('/cart', 'CartController@index');
+Route::get('/cart', 'CartController@index')->name('cart.index');

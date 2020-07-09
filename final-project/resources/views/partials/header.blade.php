@@ -46,6 +46,9 @@
               <a href="{{ route('beers.index') }}">Beers</a>
           
               <a href="{{ route('companies.index') }}">Beer-Producers</a>
+
+              <a href="{{ route('cart.index') }}">Cart</a>
+
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                   <span class="navbar-toggler-icon"></span>
               </button>
