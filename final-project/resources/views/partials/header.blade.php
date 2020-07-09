@@ -1,6 +1,6 @@
 <div class="home-header" >
   <div class="logo" >
-    <img src="/images/logo.png" />
+
 {{--   </div>
 <nav>
 
@@ -41,6 +41,8 @@
               {{-- <a class="navbar-brand" href="{{ url('/') }}">
                   {{ config('app.name', 'Laravel') }}
               </a> --}}
+              <a href="/"><img id="logo-image" src="/images/logo.png" /></a>
+
               <a href="{{ url('/') }}">Home</a>
 
               <a href="{{ route('beers.index') }}">Beers</a>

@@ -26,7 +26,7 @@ class DeliveryAddressController extends Controller
             'telephone' => 'required|string|max:255',
         ]); */
 
-
+    /* dd($request->input('name')); */
         $checkout = new DeliveryAddress;
 
         $checkout->user_id = Auth::user()->id;

@@ -26,12 +26,12 @@
 
 
 
-<h1>Beers Index</h1>
+<h1>Beers</h1>
 
 <div class="main">
 @foreach($beers as $beer)
     <div class="beer-list">
-        <img src="{{ $beer ->image }}"
+        <a href="beers/{{ $beer->id }}"><img src="{{ $beer ->image }}" /></a>
         <h2>{{ $beer->product_name }}</h2>
         <p>Company: {{ $beer->company_name }}</p>
 

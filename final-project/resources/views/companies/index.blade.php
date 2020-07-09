@@ -7,7 +7,7 @@
 <div class="main-company">
 @foreach($companies as $company)
     <div class="company-list">
-        <img src="{{ $company ->company_logo }}"
+        <a href="companies/{{ $company->id }}"><img src="{{ $company ->company_logo }}" /></a>
         <h2>{{ $company->company }}</h2>
         <a href="companies/{{ $company->id }}">more detail...</a>
     </div>

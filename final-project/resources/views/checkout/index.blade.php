@@ -7,25 +7,25 @@
       <div class="shipping-detail">
         <h1>Ship To</h1>
         <div class="form-group">
-          <input type="text" placeholder="Shipping name" class="form-control" />
+          <input type="text" name="name" placeholder="Shipping name" class="form-control" />
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Shipping Address" class="form-control" />
+          <input type="text" name="address" placeholder="Shipping Address" class="form-control" />
         </div>
           <div class="form-group">
-          <input type="text" placeholder="Shipping City" class="form-control" />
+          <input type="text" name="city" placeholder="Shipping City" class="form-control" />
         </div>
           <div class="form-group">
-          <input type="text" placeholder="Shipping State" class="form-control" />
+          <input type="text" name="state" placeholder="Shipping State" class="form-control" />
         </div>
           <div class="form-group">
-          <input type="text" placeholder="Shipping Country" class="form-control" />
+          <input type="text" name="country" placeholder="Shipping Country" class="form-control" />
         </div>
         <div class="form-group">
-          <input type="text" placeholder="Shipping Postcode" class="form-control" />
+          <input type="text" name="postcode" placeholder="Shipping Postcode" class="form-control" />
         </div>
           <div class="form-group">
-          <input type="text" placeholder="Shipping Telephone" class="form-control" />
+          <input type="text" name="telephone" placeholder="Shipping Telephone" class="form-control" />
         </div>
           <button type="submit" class="btn btn-success" href="" >Checkout</button>
       </div> 

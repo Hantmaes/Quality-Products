@@ -9997,6 +9997,16 @@ body {
   padding: 2em;
 }
 
+#logo-image {
+  width: 100px;
+  height: 100px;
+}
+
+.navbar {
+  display: flex;
+  align-items: flex-start;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -10029,18 +10039,13 @@ h2 {
   width: 300px;
   margin: 30px;
   text-align: center;
-  margin: 50px 300px;
   line-height: 2em;
 }
 .main .beer-list img {
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 450px;
+  width: 300px;
   height: 600px;
-}
-.main .beer-list #description-beers {
-  margin-right: 150px;
-  margin-left: 150px;
 }
 
 .detail-beer {
@@ -10065,8 +10070,7 @@ h2 {
   justify-content: center;
 }
 .main-company .company-list {
-  width: 300px;
-  margin: 30px;
+  width: 450px;
   text-align: center;
   margin: 50px 50px;
   line-height: 2em;
@@ -10092,11 +10096,14 @@ h2 {
 
 .new-container {
   margin-bottom: 50px;
+  text-align: center;
 }
 .new-container .carousel-inner {
   text-align: center;
-  height: 400px;
-  background-color: #8d8787;
+  height: 500px;
+  background-color: #21d192;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
 .new-container .carousel-inner #main-image {
   margin-top: 50px;

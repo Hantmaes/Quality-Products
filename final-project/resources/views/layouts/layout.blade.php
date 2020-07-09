@@ -8,6 +8,7 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="/images/logo.png" type="image/gif" sizes="32x32">
 
   <!-- Scripts -->
   <script src="{{ asset('js/app.js') }}" defer></script>
@@ -31,6 +32,8 @@
   
 
   @yield('content')
+
+  @include('partials.footer')
   
 </body>
 </html>
