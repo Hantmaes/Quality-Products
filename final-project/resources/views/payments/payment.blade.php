@@ -3,19 +3,19 @@
 
 @section('content')
 
-<body>
+
     
 
 <div class="links" style="margin-top:20px">
       
       
-    <form action="{{route('stripe.store')}}" method="post" id="payment-form">
+    <form action="{{route('stripe.store')}}" method="post" id="payment-form" class="form-group">
         @csrf
         <div class="form-row">
 
             
             <label for="validationCustom01">Name on card </label>
-            <input type="text" class="form-control" id="validationCustom01" value="Mark Turner" required>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Mark Turner" required>
             
         
             
@@ -35,7 +35,7 @@
     </form>
 </div>
 
-</body>
+
 @endsection
 
 
@@ -91,6 +91,7 @@
     float: left;
   }
   form#payment-form {
+    display: flex;
     background: #f7f8f9;
     /* border: 2px solid blue; */
     height: 50%;
@@ -197,6 +198,6 @@
             // Submit the form
             form.submit();
         }
-</script>
+  </script>
 
 @endsection
