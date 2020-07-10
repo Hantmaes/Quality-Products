@@ -10111,6 +10111,10 @@ h2 {
   height: 300px;
 }
 
+.color-quantity {
+  color: white;
+}
+
 /* .review-form {
   margin-top: 1em;
   border-top: 1px solid #999999;

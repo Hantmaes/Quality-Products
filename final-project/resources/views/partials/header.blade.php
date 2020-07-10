@@ -1,38 +1,6 @@
 <div class="home-header" >
   <div class="logo" >
 
-{{--   </div>
-<nav>
-
-  @if (Route::has('login'))
-
-      <a href="{{ url('/') }}">Home</a>
-
-      <a href="{{ route('beers.index') }}">Beers</a>
-  
-      <a href="{{ route('companies.index') }}">Beer-Producers</a>
-
-      @auth
-
-           <a href="{{ url('/home') }}">Home</a>
-          
-      @else
-          <a href="{{ route('login') }}">Login</a> 
-
-          @if (Route::has('register'))
-              <a href="{{ route('register') }}">Register</a>
-          @endif 
-
-
-      @endauth
-  
-@endif
-
-
-
-</nav>
-</div> --}}
-
 
 <body>
   <div id="app">
@@ -50,6 +18,54 @@
               <a href="{{ route('companies.index') }}">Beer-Producers</a>
 
               <a href="{{ route('cart.index') }}">Cart</a>
+              <div class="dropdown">
+                <button type="button" class="btn btn-info" data-toggle="dropdown">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge badge-pill badge-danger">{{ count((array)session('cart')) }}</span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="row total-header-section">
+                        <div class="col-lg-6 col-sm-6 col-6">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="badge badge-pill badge-danger">{{ count((array)session('cart')) }}</span>
+                        </div>
+
+                        
+
+                        <?php //session()->flush();?>
+                        <?php //dd(session('cart')); ?>
+                        
+                        <?php $total = 0 ?>
+                        @foreach((array)session('cart') as $id => $details)
+                            <?php $total += $details['price'] * $details['quantity'] ?>
+                        @endforeach
+
+                        <div class="col-lg-6 col-sm-6 col-6 total-section text-right">
+                            <p>Total: <span class="text-info">€ {{ $total }}</span></p>
+                        </div>
+                    </div>
+                    
+
+                    @if(session('cart'))
+                        @foreach(session('cart') as $id => $details)
+                            <div class="row cart-detail">
+                                <div class="col-lg-2 col-sm-2 col-2 cart-detail-img">
+                                    <img src="{{ $details['photo'] }}" width="300" />
+                                </div>
+                                <div class="col-lg-4 col-sm-4 col-4 cart-detail-product color-quantity">
+                                    <p>{{ $details['name'] }}</p>
+                                    <span class="price text-info ">€ {{ $details['price'] }}</span> <span class="count color-quantity"> Quantity:{{ $details['quantity'] }}</span>
+                                </div>
+                            </div>
+                        @endforeach
+                    @endif
+
+                    
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12 col-12 text-center checkout">
+                            <a href="{{ url('cart') }}" class="btn btn-primary btn-block">View all</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                   <span class="navbar-toggler-icon"></span>
