@@ -42,10 +42,10 @@
           <a class="dark-grey-text" href="#">Your Account</a>
         </p>
         <p>
-          <a class="dark-grey-text" href="http://localhost:3000/beers" >Beer</a>
+          <a class="dark-grey-text" href="/beers" >Beer</a>
         </p>
         <p>
-          <a class="dark-grey-text" href="http://localhost:3000/companies">Beer-Producer</a>
+          <a class="dark-grey-text" href="/companies">Beer-Producer</a>
         </p>
         <p>
           <a class="dark-grey-text" href="#!">Help</a>
@@ -90,7 +90,7 @@
         <h5 class="mb-1">Register for free</h5>
       </li>
       <li class="list-inline-item">
-        <a href="http://localhost:3000/home"  class="btn btn-outline-white btn-rounded">Sign up!</a>
+        <a href="/home"  class="btn btn-outline-white btn-rounded">Sign up!</a>
       </li>
     </ul>
     <hr />
@@ -101,7 +101,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://www.final-project.test/"> final-project.test</a>
+    <a href="/"> final-project.test</a>
   </div>
   <!-- Copyright -->
 

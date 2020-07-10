@@ -18,15 +18,15 @@
             <!-- The slideshow -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img id="main-image" src="https://www.hbrebel.cz/photos/texty/p/0/151.png" alt="Los Angeles" >
+                <a href="/beers/42"><img id="main-image" src="https://www.hbrebel.cz/photos/texty/p/0/151.png" alt="Los Angeles" ></a>
                 <h4><strong>REBEL</strong></h4>
               </div>
               <div class="carousel-item">
-                <img id="main-image" src="https://www.hbrebel.cz/photos/texty/p/0/150.png" alt="Chicago" >
+                <a href="/beers/41"><img id="main-image" src="https://www.hbrebel.cz/photos/texty/p/0/150.png" alt="Chicago" ></a>
                 <h4><strong>REBEL 0.0</strong></h4>
               </div>
               <div class="carousel-item">
-                <img id="main-image" src="https://www.hbrebel.cz/photos/texty/p/0/149.png" alt="New York" >
+                <a href="/beers/40"><img id="main-image" src="https://www.hbrebel.cz/photos/texty/p/0/149.png" alt="New York" ></a>
                 <h4><strong>REBEL XI</strong></h4>
               </div>
             </div>
@@ -56,15 +56,15 @@
           <!-- The slideshow -->
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img id="main-image" src="https://www.bernard.cz/img/u/logo-bernard-large-v02.png" alt="Los Angeles" >
+              <a href="/companies/1"><img id="main-image" src="https://www.bernard.cz/img/u/logo-bernard-large-v02.png" alt="Los Angeles" ></a>
               <h4><strong>Bernard pivo</strong></h4>
             </div>
             <div class="carousel-item">
-              <img id="main-image" src="https://pivovarcernahora.cz/wp-content/uploads/2020/04/Logo_CH_upravy_2016.png" alt="Chicago" >
+              <a href="/companies/2"><img id="main-image" src="https://pivovarcernahora.cz/wp-content/uploads/2020/04/Logo_CH_upravy_2016.png" alt="Chicago" ></a>
               <h4><strong>Pivovar Černá Hora</strong></h4>
             </div>
             <div class="carousel-item">
-              <img id="main-image" src="https://www.hbrebel.cz/img/logo_rebel.png" alt="New York" >
+              <a href="/companies/3"><img id="main-image" src="https://www.hbrebel.cz/img/logo_rebel.png" alt="New York" ></a>
               <h4><strong>Měšťanský pivovar Havlíčkův Brod</strong></h4>
             </div>
           </div>
