@@ -16,7 +16,7 @@ class DeliveryAddressController extends Controller
 
     public function store(Request $request)
     {
-/*         $this->validate($request, [
+        $this->validate($request, [
             'name' => 'required|string|max:255',
             'address' => 'required|string|max:255',
             'city' => 'required|string|max:255',
@@ -24,7 +24,7 @@ class DeliveryAddressController extends Controller
             'country' => 'required|string|max:255',
             'postcode' => 'required|string|max:255',
             'telephone' => 'required|string|max:255',
-        ]); */
+        ]);
 
     /* dd($request->input('name')); */
         $checkout = new DeliveryAddress;
