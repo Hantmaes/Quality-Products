@@ -36,38 +36,42 @@
 
 <body>
   <div id="app">
-      <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-          <div class="container">
-              {{-- <a class="navbar-brand" href="{{ url('/') }}">
-                  {{ config('app.name', 'Laravel') }}
-              </a> --}}
-              <a href="/"><img id="logo-image" src="/images/logo.png" /></a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+          <div class="header-container">
+              <div class="logo-header" >
+                  <!-- Left Side Of Navbar -->
+                <ul class="navbar-nav mr-auto">
+                    {{-- <a class="navbar-brand" href="{{ url('/') }}">
+                        {{ config('app.name', 'Laravel') }}
+                    </a> --}}
+                    <a href="/"><img id="logo-image" src="/images/logo.png" /></a>
 
-              <a href="{{ url('/') }}">Home</a>
+                    <a class="" href="{{ url('/') }}">Home</a>
 
-              <a href="{{ route('beers.index') }}">Beers</a>
-          
-              <a href="{{ route('companies.index') }}">Beer-Producers</a>
+                    <a href="{{ route('beers.index') }}">Beers</a>
+                
+                    <a href="{{ route('companies.index') }}">Beer-Producers</a>
 
-              <a href="{{ route('cart.index') }}">Cart</a>
+                    <a href="{{ route('cart.index') }}">Cart</a>
 
-              <form class="form-inline my-2 my-lg-0" action="/" method="POST" role="search">
-                {{ csrf_field() }}
-                <input class="form-control mr-sm-2" type="search" placeholder="Search your beer" aria-label="Search" name="q"
-                placeholder="Search beer name">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
+                    <a href="{{ url('/contact') }}">Contact</a>
 
+                    <form class="form-inline my-2 my-lg-0" action="/" method="POST" role="search">
+                        {{ csrf_field() }}
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search your beer" aria-label="Search" name="q"
+                        placeholder="Search beer name">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </ul>
+            </div>
+
+            <div class="login-header">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                   <span class="navbar-toggler-icon"></span>
               </button>
 
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <!-- Left Side Of Navbar -->
-                  <ul class="navbar-nav mr-auto">
-
-                  </ul>
-
+                  
                   <!-- Right Side Of Navbar -->
                   <ul class="navbar-nav ml-auto">
                       <!-- Authentication Links -->
@@ -101,6 +105,7 @@
                       @endguest
                   </ul>
               </div>
+            </div>
           </div>
       </nav>
 

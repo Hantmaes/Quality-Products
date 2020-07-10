@@ -19,6 +19,7 @@ body {
 
 .navbar {
   display: flex;
+  // border: 2px solid blue;
   align-items: flex-start;
 }
 
@@ -29,11 +30,15 @@ nav {
   a {
     color: #636B6F;
     padding: 0 25px;
+    // border: 2px solid blue;
     font-size: 13px;
     font-weight: 600;
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
   }
 }
 h1 {
@@ -122,6 +127,20 @@ h2 {
       height: 300px;
     }
   }
+}
+
+
+.header-container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  text-align: center;
+  
+  .login-header {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 

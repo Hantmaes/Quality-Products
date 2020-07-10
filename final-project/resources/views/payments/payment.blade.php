@@ -44,7 +44,6 @@
 <script src="https://js.stripe.com/v3/"></script>
 <!-- Styles for payment form -->
 <style>
-
   /* Stripe CSS */
   .StripeElement {
     box-sizing: border-box;
@@ -59,7 +58,6 @@
     transition: box-shadow 150ms ease;
     border: 2px solid blue;
   }
-
   .form-control {
     box-sizing: border-box;
     height: 40px;
@@ -120,7 +118,6 @@
     color: #fa755a;
     font-weight: 600;
   }
-
 </style>
 
 @endsection
