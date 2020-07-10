@@ -88,7 +88,7 @@ class CartController extends Controller
 
     public function add(Request $request)
     {
-        $item = Cart::where('beer_id', $request->input('bbeer_id'))->first();
+        $item = Cart::where('beer_id', $request->input('beer_id'))->first();
 
         if ($item != null) {
             //item with choosen book_id allready exits, I want just to update count

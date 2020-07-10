@@ -51,6 +51,13 @@
 
               <a href="{{ route('cart.index') }}">Cart</a>
 
+              <form class="form-inline my-2 my-lg-0" action="/" method="POST" role="search">
+                {{ csrf_field() }}
+                <input class="form-control mr-sm-2" type="search" placeholder="Search your beer" aria-label="Search" name="q"
+                placeholder="Search beer name">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                   <span class="navbar-toggler-icon"></span>
               </button>
