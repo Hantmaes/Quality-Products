@@ -88,7 +88,7 @@
 
 
 
-<button class="btn btn-success"><a href="/checkout"><i class="fa fa-angle-right"></i>Shipping details</a></button>
+<button class="btn btn-warning"><a href="/checkout">Shipping details <i class="fa fa-angle-right"></i></a></button>
 @endauth
 
 @guest
