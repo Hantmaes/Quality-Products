@@ -10111,6 +10111,17 @@ h2 {
   height: 300px;
 }
 
+.header-container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  text-align: center;
+}
+.header-container .login-header {
+  display: flex;
+  justify-content: center;
+}
+
 /* .review-form {
   margin-top: 1em;
   border-top: 1px solid #999999;

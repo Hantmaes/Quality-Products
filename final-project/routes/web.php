@@ -19,8 +19,12 @@ Route::get('/', 'MainPageController@slider', function () {
 
 Route::get('/beers', 'BeerController@index')->name('beers.index');
 Route::get('/beers/{beer_id}', 'BeerController@show');
+
 Route::get('/checkout', 'DeliveryAddressController@checkout');
 Route::post('/delivery', 'DeliveryAddressController@store');
+
+Route::get('/contact', 'ContactController@contact');
+Route::post('/contact-form', 'ContactController@store');
 
 
 Auth::routes();

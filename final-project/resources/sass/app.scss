@@ -125,6 +125,20 @@ h2 {
 }
 
 
+.header-container {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  text-align: center;
+  
+  .login-header {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+
 
 /* .review-form {
   margin-top: 1em;

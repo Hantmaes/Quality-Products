@@ -48,6 +48,9 @@
           <a class="dark-grey-text" href="/companies">Beer-Producer</a>
         </p>
         <p>
+          <a class="dark-grey-text" href="/contact">Contact</a>
+        </p>
+        <p>
           <a class="dark-grey-text" href="#!">Help</a>
         </p>
 
@@ -58,7 +61,7 @@
       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
         <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <h6 class="text-uppercase font-weight-bold">Contact Info.</h6>
         <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
         <p>
           <i class="fas fa-home mr-3"></i> Prague, Czech Republic</p>
