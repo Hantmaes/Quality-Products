@@ -64,6 +64,7 @@
             <td><a href="{{ url('/') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
             <td colspan="2" class="hidden-xs"></td>
             <td class="hidden-xs text-center"><strong>Total €{{ $total }}</strong></td>
+            <td><a href="{{ url('/checkout') }}" class="btn btn-success"> Go to checkout</a></td>
         </tr>
         </tfoot>
     </table>
@@ -89,6 +90,7 @@
 
 
 <button class="btn btn-warning"><a href="/checkout">Shipping details <i class="fa fa-angle-right"></i></a></button>
+
 @endauth
 
 @guest
