@@ -63,12 +63,12 @@
       <div class="form-row">
         <ul>
           <li>Name:{{ $request['name'] }}</li>
-          <li>Name:{{ $request['address'] }}</li>
-          <li>Name:{{ $request['city'] }}</li>
-          <li>Name:{{ $request['state'] }}</li>
-          <li>Name:{{ $request['country'] }}</li>
-          <li>Name:{{ $request['postcode'] }}</li>
-          <li>Name:{{ $request['telephone'] }}</li>
+          <li>Address:{{ $request['address'] }}</li>
+          <li>City:{{ $request['city'] }}</li>
+          <li>State:{{ $request['state'] }}</li>
+          <li>Contry:{{ $request['country'] }}</li>
+          <li>Post Code:{{ $request['postcode'] }}</li>
+          <li>Telephone:{{ $request['telephone'] }}</li>
           @php
               //d($request)
           @endphp
