@@ -87,6 +87,7 @@
             <div id="card-element">
                 <!-- A Stripe Element will be inserted here. -->
             </div>
+            <input type="hidden" id="total" name="total" value="{{ $total }}">
         
     
             <!-- Used to display form errors. -->
@@ -254,6 +255,8 @@
             hiddenInput.setAttribute('type', 'hidden');
             hiddenInput.setAttribute('name', 'stripeToken');
             hiddenInput.setAttribute('value', token.id);
+            
+
             form.appendChild(hiddenInput);
        
             // Submit the form
