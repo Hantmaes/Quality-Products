@@ -46,3 +46,32 @@ Route::post('/', 'SearchController@index')->name('search.index');
 Route::patch('update-cart', 'CartController@update');
 
 Route::delete('remove-from-cart', 'CartController@remove');
+
+
+
+
+
+
+/* use App\Mail\InvoiceEmail;
+use Illuminate\Support\Facades\Mail;
+Route::get('/send-email', function() {
+    
+    $price=10;
+
+    Mail::to('test@cbp.cz')->send(new InvoiceEmail($price));
+});
+
+use App\User;
+use App\Notifications\InvoicePaid;
+
+Route::get('/send-notification', function() {
+    $user = User::first();
+
+    $user->notify(new InvoicePaid());
+});
+
+Route::get('/get-pdf', function() {
+    $pdf = PDF::loadView('invoice-email');
+
+    return $pdf->download('invoice.pdf');
+}); */

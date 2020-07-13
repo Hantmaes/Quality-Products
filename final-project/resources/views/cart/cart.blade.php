@@ -64,42 +64,42 @@
             <td><a href="{{ url('/') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
             <td colspan="2" class="hidden-xs"></td>
             <td class="hidden-xs text-center"><strong>Total €{{ $total }}</strong></td>
-            <td><a href="{{ url('/checkout') }}" class="btn btn-success"> Go to checkout</a></td>
+            <td>    @auth
+                @if (Session::has('success_message'))
+                    
+                <div class="alert alert-success">
+                    {{ Session::get('success_message') }}
+                </div>
+                
+                @endif
+                
+                @if (count($errors) > 0)
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
+                
+                
+                
+                <a  href="{{ url('/checkout') }}" class="btn btn-success"> Go to checkout</a>
+                
+                @endauth
+                
+                @guest
+                
+                
+                    <a class="btn btn-warning" href="{{ route('login') }}">Login to Checkout</a>
+                
+                
+                @endguest</td>
         </tr>
         </tfoot>
     </table>
-    @auth
-@if (Session::has('success_message'))
-    
-<div class="alert alert-success">
-    {{ Session::get('success_message') }}
-</div>
 
-@endif
-
-@if (count($errors) > 0)
-<div class="alert alert-danger">
-    <ul>
-        @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-        @endforeach
-    </ul>
-</div>
-@endif
-
-
-
-<button class="btn btn-warning"><a href="/checkout">Shipping details <i class="fa fa-angle-right"></i></a></button>
-
-@endauth
-
-@guest
-
-<p>
-    Please log in to add shipping details: <a href="{{ route('login') }}">Login</a>
-</p>
-
-@endguest
 
 @endsection
 

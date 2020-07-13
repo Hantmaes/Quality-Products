@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Beer;
+use App\Review;
+
 
 class BeerController extends Controller
 {
@@ -24,6 +26,7 @@ class BeerController extends Controller
     
         return view('beers.show', compact('beer'));
     }
+
 
 
 }
