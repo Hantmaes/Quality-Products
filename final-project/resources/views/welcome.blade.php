@@ -27,6 +27,14 @@
     @elseif(isset($message))
     <p>{{ $message }}</p>
     @endif
+
+    @if (Session::has('success'))
+    
+<div class="alert alert-success">
+    {{ Session::get('success') }}
+</div>
+
+@endif
   </div>
 
     <div class="new-container">
