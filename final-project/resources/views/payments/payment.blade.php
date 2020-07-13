@@ -80,23 +80,20 @@
             
             <label for="validationCustom01">Name on card </label>
             <input type="text" class="form-control" id="validationCustom01" placeholder="{{ $request['name'] }}" required>
-            <input type="hidden" name="amount" value="<?php echo $total; ?>" />
-            <input type="hidden" name="currency_code" value="USD" />
-            {{-- <input type="hidden" name="details" value="<?php echo $details; ?>" /> --}}
-            <input type="button" name="button_action" id="button_action" class="btn btn-success btn-sm" value="Pay Now" />
-            
+            {{-- <input type="hidden" name="amount" value="<?php echo $total; ?>" /> --}}
         
             
             <label for="card-element">Credit or debit card</label>
             <div id="card-element">
                 <!-- A Stripe Element will be inserted here. -->
             </div>
+            <input type="hidden" id="total" name="total" value="{{ $total }}">
         
     
             <!-- Used to display form errors. -->
             <div id="card-errors" role="alert"></div>
 
-            <button id="st-btn" type="button" name="button_action">Submit Payment</button>
+            <button id="st-btn" type="submit">Submit Payment</button>
         </div>
     
         
@@ -258,6 +255,8 @@
             hiddenInput.setAttribute('type', 'hidden');
             hiddenInput.setAttribute('name', 'stripeToken');
             hiddenInput.setAttribute('value', token.id);
+            
+
             form.appendChild(hiddenInput);
        
             // Submit the form

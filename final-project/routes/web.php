@@ -36,7 +36,7 @@ Route::get('/companies/{company_id}', 'CompanyController@show');
 Route::get('/add-to-cart/{id}', 'CartController@addToCart');
 Route::get('/cart', 'CartController@index')->name('cart.index');
 
-Route::post('stripe-payment', 'PaymentController@store')->name('stripe.store');
+Route::post('/stripe-payment', 'PaymentController@store')->name('stripe.store');
 Route::get('/payments', 'PaymentController@checkout')->name('payments.checkout');
 Route::post('/confirm-payment', 'PaymentController@confirm');
 Route::post('/charge', 'PaymentController@charge');
