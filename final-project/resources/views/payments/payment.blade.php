@@ -80,6 +80,10 @@
             
             <label for="validationCustom01">Name on card </label>
             <input type="text" class="form-control" id="validationCustom01" placeholder="{{ $request['name'] }}" required>
+            <input type="hidden" name="amount" value="<?php echo $total; ?>" />
+            <input type="hidden" name="currency_code" value="USD" />
+            {{-- <input type="hidden" name="details" value="<?php echo $details; ?>" /> --}}
+            <input type="button" name="button_action" id="button_action" class="btn btn-success btn-sm" value="Pay Now" />
             
         
             
@@ -92,7 +96,7 @@
             <!-- Used to display form errors. -->
             <div id="card-errors" role="alert"></div>
 
-            <button id="st-btn">Submit Payment</button>
+            <button id="st-btn" type="button" name="button_action">Submit Payment</button>
         </div>
     
         
