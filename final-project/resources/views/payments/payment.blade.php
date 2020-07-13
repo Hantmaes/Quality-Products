@@ -80,7 +80,7 @@
             
             <label for="validationCustom01">Name on card </label>
             <input type="text" class="form-control" id="validationCustom01" placeholder="{{ $request['name'] }}" required>
-            
+            {{-- <input type="hidden" name="amount" value="<?php echo $total; ?>" /> --}}
         
             
             <label for="card-element">Credit or debit card</label>
@@ -93,7 +93,7 @@
             <!-- Used to display form errors. -->
             <div id="card-errors" role="alert"></div>
 
-            <button id="st-btn">Submit Payment</button>
+            <button id="st-btn" type="submit">Submit Payment</button>
         </div>
     
         
