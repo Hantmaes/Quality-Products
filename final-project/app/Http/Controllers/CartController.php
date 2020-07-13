@@ -2,112 +2,106 @@
 
 namespace App\Http\Controllers;
 
+use App\Beer;
 use App\Cart;
 use Illuminate\Http\Request;
 
 class CartController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
-        $cartItems = Cart::all();
+        $products = Beer::all();
 
-        return view('cart/index', compact('cartItems'));
+        return view('cart/cart', compact('products'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function cart()
     {
-        //
+        return view('cart/cart');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
+    public function addToCart($id)
     {
-        //
-    }
+        $product = Beer::find($id);
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
+        if(!$product) {
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
+            abort(404);
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
-
-    public function add(Request $request)
-    {
-        $item = Cart::where('beer_id', $request->input('bbeer_id'))->first();
-
-        if ($item != null) {
-            //item with choosen book_id allready exits, I want just to update count
-
-            $item->count += $request->input('count');
-            $item->save();
-
-        } else {
-            //item with choosen book_id does NOT exist, I will create it
-
-            $cartItem = new Cart;
-
-            $cartItem->beer_id = $request->input('beer_id');
-            $cartItem->count   = $request->input('count');
-
-            $cartItem->save();
         }
 
+        $cart = session()->get('cart');
 
-        return redirect('/cart');
+        // if cart is empty then this the first product
+        if(!$cart) {
+
+            $cart = [
+                    $id => [
+                        "name" => $product->product_name,
+                        "quantity" => 1,
+                        "price" => $product->alcohol_content,
+                        "photo" => $product->image
+                    ]
+            ];
+
+            session()->put('cart', $cart);
+
+            return redirect()->back()->with('success', 'Product added to cart successfully!');
+        }
+
+        // if cart not empty then check if this product exist then increment quantity
+        if(isset($cart[$id])) {
+
+            $cart[$id]['quantity']++;
+
+            session()->put('cart', $cart);
+
+            return redirect()->back()->with('success', 'Product added to cart successfully!');
+
+        }
+
+        // if item not exist in cart then add to cart with quantity = 1
+        $cart[$id] = [
+            "name" => $product->product_name,
+            "quantity" => 1,
+            "price" => $product->alcohol_content,
+            "photo" => $product->image
+        ];
+
+        session()->put('cart', $cart);
+
+        return redirect()->back()->with('success', 'Product added to cart successfully!');
+    }
+
+    public function update(Request $request)
+    {
+        $item = Cart::where('beer_id', $request->input('beer_id'))->first();
+        if($request->id and $request->quantity)
+        {
+            $cart = session()->get('cart');
+
+            $cart[$request->id]["quantity"] = $request->quantity;
+
+            session()->put('cart', $cart);
+
+            session()->flash('success', 'Cart updated successfully');
+        }
+    }
+
+    public function remove(Request $request)
+    {
+        if($request->id) {
+
+            $cart = session()->get('cart');
+
+            if(isset($cart[$request->id])) {
+
+                unset($cart[$request->id]);
+
+                session()->put('cart', $cart);
+            }
+
+            session()->flash('success', 'Product removed successfully');
+        }
     }
 }

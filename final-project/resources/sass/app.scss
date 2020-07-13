@@ -19,6 +19,7 @@ body {
 
 .navbar {
   display: flex;
+  // border: 2px solid blue;
   align-items: flex-start;
 }
 
@@ -29,11 +30,15 @@ nav {
   a {
     color: #636B6F;
     padding: 0 25px;
+    // border: 2px solid blue;
     font-size: 13px;
     font-weight: 600;
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
   }
 }
 h1 {
@@ -108,8 +113,6 @@ h2 {
   margin-bottom: 50px;
   text-align: center;
   
-  
-
 
   .carousel-inner {
     text-align: center;
@@ -125,7 +128,9 @@ h2 {
     }
   }
 }
-
+.color-quantity{
+  color: white;
+}
 
 .header-container {
   display: flex;

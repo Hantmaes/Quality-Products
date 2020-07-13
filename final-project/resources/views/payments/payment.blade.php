@@ -2,24 +2,92 @@
 {{-- @extends('layouts.app') --}}
 
 @section('content')
+
+
+    
+
 <div class="links" style="margin-top:20px">
       
       
-    <form action="{{route('stripe.store')}}" method="post" id="payment-form">
+    <form action="{{route('stripe.store')}}" method="post" id="payment-form" class="form-group">
         @csrf
+
+        <table id="cart" class="table table-hover table-condensed">
+          <thead>
+          <tr>
+              <th style="width:50%">Product</th>
+              <th style="width:10%">Price</th>
+              <th style="width:8%">Quantity</th>
+              <th style="width:22%" class="text-center">Subtotal</th>
+              <th style="width:10%"></th>
+          </tr>
+          </thead>
+          <tbody>
+    
+          <?php $total = 0 ?>
+    
+          @if(session('cart'))
+              @foreach(session('cart') as $id => $details)
+    
+                  <?php $total += $details['price'] * $details['quantity'] ?>
+    
+                  <tr>
+                      <td data-th="Product">
+                          <div class="row">
+                              <div class="col-sm-3 hidden-xs"><img src="{{ $details['photo'] }}" width="100" height="100" class="img-responsive"/></div>
+                              <div class="col-sm-9">
+                                  <h4 class="nomargin">{{ $details['name'] }}</h4>
+                              </div>
+                          </div>
+                      </td>
+                      <td data-th="Price">€{{ $details['price'] }}</td>
+                      <td data-th="Quantity">{{ $details['quantity'] }}</td>
+                      <td data-th="Subtotal" class="text-center">€{{ $details['price'] * $details['quantity'] }}</td>
+                      <td class="actions" data-th="">
+                          
+    
+                      </td>
+                  </tr>
+              @endforeach
+          @endif
+    
+          </tbody>
+          <tfoot>
+          <tr class="visible-xs">
+              <td class="text-center"><strong>Total €{{ $total }}</strong></td>
+          </tr>
+    
+          </tfoot>
+      </table>
+
+      <div class="form-row">
+        <ul>
+          <li>Name:{{ $request['name'] }}</li>
+          <li>Address:{{ $request['address'] }}</li>
+          <li>City:{{ $request['city'] }}</li>
+          <li>State:{{ $request['state'] }}</li>
+          <li>Contry:{{ $request['country'] }}</li>
+          <li>Post Code:{{ $request['postcode'] }}</li>
+          <li>Telephone:{{ $request['telephone'] }}</li>
+          @php
+              //d($request)
+          @endphp
+
+        </ul>
+      </div>
         <div class="form-row">
 
-            <div>
+            
             <label for="validationCustom01">Name on card </label>
-            <input type="text" class="form-control" id="validationCustom01" value="Mark Turner" required>
-            </div>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="{{ $request['name'] }}" required>
+            
         
-            <div>
+            
             <label for="card-element">Credit or debit card</label>
             <div id="card-element">
                 <!-- A Stripe Element will be inserted here. -->
             </div>
-        </div>
+        
     
             <!-- Used to display form errors. -->
             <div id="card-errors" role="alert"></div>
@@ -30,6 +98,8 @@
         
     </form>
 </div>
+
+
 @endsection
 
 
@@ -38,7 +108,6 @@
 <script src="https://js.stripe.com/v3/"></script>
 <!-- Styles for payment form -->
 <style>
-
   /* Stripe CSS */
   .StripeElement {
     box-sizing: border-box;
@@ -53,7 +122,6 @@
     transition: box-shadow 150ms ease;
     border: 2px solid blue;
   }
-
   .form-control {
     box-sizing: border-box;
     height: 40px;
@@ -85,8 +153,10 @@
     float: left;
   }
   form#payment-form {
+    display: flex;
     background: #f7f8f9;
     /* border: 2px solid blue; */
+    height: 50%;
     padding: 50px;
   }
   button#st-btn {
@@ -112,7 +182,6 @@
     color: #fa755a;
     font-weight: 600;
   }
-
 </style>
 
 @endsection
@@ -190,6 +259,6 @@
             // Submit the form
             form.submit();
         }
-</script>
+  </script>
 
 @endsection

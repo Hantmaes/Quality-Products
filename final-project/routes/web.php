@@ -33,9 +33,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/companies', 'CompanyController@index')->name('companies.index');
 Route::get('/companies/{company_id}', 'CompanyController@show');
 
-Route::post('/add-to-cart', 'CartController@add');
+Route::get('/add-to-cart/{id}', 'CartController@addToCart');
 Route::get('/cart', 'CartController@index')->name('cart.index');
 
 Route::post('stripe-payment', 'PaymentController@store')->name('stripe.store');
 Route::get('/payments', 'PaymentController@checkout')->name('payments.checkout');
+Route::post('/confirm-payment', 'PaymentController@confirm');
 
+
+Route::post('/', 'SearchController@index')->name('search.index');
+
+Route::patch('update-cart', 'CartController@update');
+
+Route::delete('remove-from-cart', 'CartController@remove');

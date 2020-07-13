@@ -17,6 +17,8 @@ class PaymentController extends Controller
             'receipt_email' => "admin@email.com",
         ]);
 
+        
+
         // return "Payment Created";
 
         return redirect('/');
@@ -27,9 +29,14 @@ class PaymentController extends Controller
         // ]);
     }  
     
-    public function checkout()
+ 
+
+    public function confirm(Request $request)
     {   
+        //dd($request);
         
-        return view('payments.payment');
+        return view('payments.payment', compact('request'));
     }
+
+
 }
