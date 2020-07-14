@@ -10,8 +10,9 @@ html {
 }
 body {
   margin: 0;
-
-  
+  padding: 2em;
+  background: url("../images/beer.jpg");
+  opacity: 0,8;
 }
 
 #logo-image {
@@ -23,6 +24,13 @@ body {
   display: flex;
   // border: 2px solid blue;
   align-items: flex-start;
+  background: url("../images/green-bubbles.jpg");
+
+  .nav-link {
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 0.25rem;
+  }
 }
 
 nav {
@@ -30,7 +38,7 @@ nav {
   justify-content: flex-end;
   margin-bottom: 2em;
   a {
-    color: #636B6F;
+    color: white;
     padding: 0 25px;
     // border: 2px solid blue;
     font-size: 13px;
@@ -41,14 +49,34 @@ nav {
     display: flex;
     align-items: center;
 
+   
+
   }
+  .btn {
+    background-color: lightblue;
+    color: black;
+  }
+
+  .navbar-toggler {
+    background-color: lightgreen;
+  }
+
 }
+
+
 h1 {
-  color: red;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background:rgba(0, 0, 0, 0.7);
 }
 h2 {
   color: blue;
 }
+
+h4 {
+  color: yellow;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -138,15 +166,22 @@ h2 {
   .carousel-inner {
     text-align: center;
     height: 500px;
-    background-color: #21d192;
+    // background-color: #21d192;
+    background: url("../images/hops.jpg");
+    background-size: cover;
     margin-top: 50px;
     margin-bottom: 100px;
+    // opacity: 0.6;
 
     #main-image {
       margin-top: 50px;
       width: 300px;
       height: 300px;
     }
+  }
+
+  .carousel-item {
+    background:rgba(0, 0, 0, 0.7);
   }
 }
 .color-quantity{
@@ -164,6 +199,10 @@ h2 {
     justify-content: center;
   }
 
+}
+
+.page-footer {
+  background-color: lightgoldenrodyellow;
 }
 
 
@@ -191,10 +230,11 @@ h2 {
       }
   }
 }
-.related-books {
-  display: flex;
-  flex-direction: row;
-  & > div {
-      width: 25%;
-  }
-} */
+*/
+// .related-books {
+//   display: flex;
+//   flex-direction: row;
+//   & > div {
+//       width: 25%;
+//   }
+// } 
