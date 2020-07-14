@@ -9,7 +9,7 @@
     <div class="company-list">
         <a href="companies/{{ $company->id }}"><img src="{{ $company ->company_logo }}" /></a>
         <h2>{{ $company->company }}</h2>
-        <a href="companies/{{ $company->id }}">more detail...</a>
+        <a style="color: lightgreen" href="companies/{{ $company->id }}">more detail...</a>
     </div>
 @endforeach
 </div>

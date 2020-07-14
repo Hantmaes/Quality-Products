@@ -35,7 +35,7 @@
         <h2>{{ $beer->product_name }}</h2>
         <p>Company: {{ $beer->company_name }}</p>
 
-        <a href="beers/{{ $beer->id }}">more detail...</a>
+        <a style="color: lightgreen" href="beers/{{ $beer->id }}">more detail...</a>
     </div>
 @endforeach
 

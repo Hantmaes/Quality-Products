@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   padding: 2em;
-  background: url("../images/beer.jpg");
+  background: url("../images/background.jpg");
   opacity: 0,8;
 }
 
@@ -22,12 +22,14 @@ body {
 
 .navbar {
   display: flex;
+
   // border: 2px solid blue;
   align-items: flex-start;
-  background: url("../images/green-bubbles.jpg");
+
+  background: url("../images/metal.jpg");
 
   .nav-link {
-    background-color: white;
+    color: white;
     margin-left: 10px;
     border-radius: 0.25rem;
   }
@@ -70,11 +72,21 @@ h1 {
   background:rgba(0, 0, 0, 0.7);
 }
 h2 {
-  color: blue;
+  color: white;
+}
+
+h3 {
+  color: white;
+  background:rgba(0, 0, 0, 0.7);
+}
+
+p {
+  color: white;
 }
 
 h4 {
-  color: yellow;
+  color: white;
+  background:rgba(0, 0, 0, 0.7);
 }
 
 .main {
@@ -166,8 +178,8 @@ h4 {
   .carousel-inner {
     text-align: center;
     height: 500px;
-    // background-color: #21d192;
-    background: url("../images/hops.jpg");
+    background-color: #69706e;
+    /* background: url("../images/hops.jpg"); */
     background-size: cover;
     margin-top: 50px;
     margin-bottom: 100px;
@@ -202,7 +214,20 @@ h4 {
 }
 
 .page-footer {
-  background-color: lightgoldenrodyellow;
+  background-color: black;
+  color: white;
+}
+
+.list-inline-item-1 {
+  background-color: red;
+  a{
+    color: white;
+  }
+}
+
+.pay {
+  display: flex;
+  flex-direction: column;
 }
 
 

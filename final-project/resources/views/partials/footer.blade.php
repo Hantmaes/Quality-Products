@@ -1,7 +1,7 @@
 <!-- Footer -->
 <footer class="page-footer font-small blue-grey lighten-5" style="margin-top: 50px">
 
-  <div style="background-color: #21d192;">
+  <div style="background-color: black;">
     <div class="container">
 
       <!-- Grid row-->
@@ -92,7 +92,7 @@
       <li class="list-inline-item">
         <h5 class="mb-1">Register for free</h5>
       </li>
-      <li class="list-inline-item">
+      <li class="list-inline-item-1">
         <a href="/home"  class="btn btn-outline-white btn-rounded">Sign up!</a>
       </li>
     </ul>

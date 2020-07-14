@@ -13,7 +13,7 @@ class BeerController extends Controller
         
         
         $beers = Beer::all();
-        $beers = Beer::paginate(10);
+        $beers = Beer::paginate(8);
 
         return view('beers.index', compact('beers'));
     }

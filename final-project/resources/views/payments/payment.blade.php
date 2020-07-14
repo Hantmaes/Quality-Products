@@ -33,10 +33,10 @@
     
                   <tr>
                       <td data-th="Product">
-                          <div class="row">
+                          <div class="row pay">
                               <div class="col-sm-3 hidden-xs"><img src="{{ $details['photo'] }}" width="100" height="100" class="img-responsive"/></div>
                               <div class="col-sm-9">
-                                  <h4 class="nomargin">{{ $details['name'] }}</h4>
+                                  <h5 class="nomargin">{{ $details['name'] }}</h5>
                               </div>
                           </div>
                       </td>
