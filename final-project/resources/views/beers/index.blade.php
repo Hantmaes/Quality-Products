@@ -31,7 +31,7 @@
 <div class="main">
 @foreach($beers as $beer)
     <div class="beer-list">
-        <a href="beers/{{ $beer->id }}"><img src="{{ $beer->image }}" /></a>
+        <a href="beers/{{ $beer->id }}"><img src="{{ $beer->image }}" class="img-fluid" alt="Responsive image" /></a>
         <h2>{{ $beer->product_name }}</h2>
         <p>Company: {{ $beer->company_name }}</p>
 
