@@ -42,7 +42,11 @@ class PaymentController extends Controller
             $payment->payment_status = "paid";
             $payment->save();
 
-        $request->session()->flush();
+        
+        
+       
+
+        $request->session('cart')->forget('cart');
 
         // return "Payment Created";
 
