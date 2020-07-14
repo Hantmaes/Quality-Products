@@ -2,6 +2,21 @@
 
 @section('content')
 
+<!-- === 🔲 SquareStudio Age Verification Plugin 🔲 === -->
+<div id="age-verif">
+  <div id="age-pop">
+    <h2>Are you over 18?</h2>
+    <p id="age-yes">Yes</p>
+    <p id="age-no">No</p>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<style>
+#age-verif{opacity:0;pointer-events:none;position:fixed;top:0;bottom:0;left:0;right:0;z-index:9000;background-color:rgba(219,218,218,.95);transition:visibility 0s ease-in-out .5s,opacity .5s ease-in-out}.ageUnconfirmed{pointer-events:auto!important;opacity:1!important}@media (max-width:768px){#age-pop{width:90vw!important}}#age-pop{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#65839b;text-align:center;padding:50px 40px;width:30vw;height:auto;box-sizing:border-box}#age-pop p{cursor:pointer;background-color:#fff;color:#ooo;padding:15px 30px;margin-top:20px;text-transform:uppercase;letter-spacing:2px;font-weight:600;font-size:12px;display:inline-block;outline:0}
+</style>
+<script>$(document).ready(function(){if(localStorage.getItem("ageverified")=='true'){}else{$('#age-verif').addClass('ageUnconfirmed')}});</script><script>$(document).ready(function(){$('#age-yes').click(function(){localStorage.setItem('ageverified','true');$('#age-verif').removeClass('ageUnconfirmed')})});</script><script>$(document).ready(function(){$('#age-no').click(function(){$(location).attr('href','https://google.com')})});</script>
+<!-- === 🔲 SquareStudio Age Verification Plugin 🔲 === -->
+
   <script src="https://js.stripe.com/v3/"></script>
 
   <div class="container">
