@@ -9995,6 +9995,8 @@ html {
 body {
   margin: 0;
   padding: 2em;
+  background: url("../images/beer.jpg");
+  opacity: 0, 8;
 }
 
 #logo-image {
@@ -10005,6 +10007,7 @@ body {
 .navbar {
   display: flex;
   align-items: flex-start;
+  background: url("../images/green-bubbles.jpg");
 }
 
 nav {

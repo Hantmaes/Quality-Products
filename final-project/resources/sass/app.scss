@@ -10,6 +10,8 @@ html {
 body {
   margin: 0;
   padding: 2em;
+  background: url("../images/beer.jpg");
+  opacity: 0,8;
 }
 
 #logo-image {
@@ -21,6 +23,7 @@ body {
   display: flex;
   // border: 2px solid blue;
   align-items: flex-start;
+  background: url("../images/green-bubbles.jpg");
 }
 
 nav {
@@ -147,6 +150,7 @@ h2 {
   }
 
 }
+
 
 
 
