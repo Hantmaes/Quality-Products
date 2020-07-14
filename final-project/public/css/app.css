@@ -9994,7 +9994,6 @@ html {
 
 body {
   margin: 0;
-  padding: 2em;
 }
 
 #logo-image {
@@ -10050,15 +10049,24 @@ h2 {
 }
 
 .detail-beer {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin: 50px 300px;
+  margin: 0 50px;
   line-height: 2em;
 }
-.detail-beer img {
+.detail-beer .detail-beers {
   margin-top: 50px;
-  margin-bottom: 50px;
-  width: 450px;
+  display: flex;
+  justify-content: space-around;
 }
+.detail-beer img {
+  width: 400px;
+}
+.detail-beer .detail-beer_2 {
+  max-width: 800px;
+}
+
 .main-company {
   display: flex;
   flex-wrap: wrap;

@@ -18,23 +18,20 @@
     </thead>
     <tbody>
       <tr>
-        <th scope="row"><h4>Email address: {{ $company->company_email }}</h4></th>
+        <th scope="row"><strong><h4>Email address:</strong> {{ $company->company_email }}</h4></th>
   
       </tr>
       <tr>
-        <th scope="row"><h4>Number: +{{ $company->company_number }}</h4></th>
+        <th scope="row"><strong><h4>Number:</strong> +{{ $company->company_number }}</h4></th>
   
       </tr>
       <tr>
-        <th scope="row"><h4>Address: {{ $company->company_address }}</h4></th>
+        <th scope="row"><strong><h4>Address:</strong> {{ $company->company_address }}</h4></th>
   
       </tr>
     </tbody>
   </table>
 </div>
-  
-  
-  
 
 </div>
 

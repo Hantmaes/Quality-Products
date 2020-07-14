@@ -12,17 +12,46 @@
 @endif
 
 <div class="detail-beer">
+
   <h1>{{ $beer->product_name }}</h1>
-  <h3>Price: €{{ $beer->alcohol_content }}</h3>
-  <h3>Company: {{ $beer->company_name }}</h3>
-  <img src="{{ $beer->image }}">
-  <p id="description-beers">Description: {{ $beer->description }}</p>
-  <p>Alcohol Content: {{ $beer->alcohol_content }}%</p>
-  <p>Category: {{ $beer->category }}</p>
+  <h3><strong>Beer-Producer:</strong> {{ $beer->company_name }}</h3>
+  <div class="detail-beers">
+  <div class="detail-beer_1">
 
-  <p class="btn-holder"><a href="{{ url('add-to-cart/'.$beer->id) }}" class="btn btn-warning btn-block text-center" role="button">Add to cart</a> </p>
-
+    <img src="{{ $beer->image }}">
+  </div>
+  <div class="detail-beer_2">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col"><h3><strong>Price:</strong> €{{ $beer->alcohol_content }}</h3></th>
+    
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"><h4 id="description-beers"><strong>Description:</strong> {{ $beer->description }}</h4></th>
+    
+        </tr>
+        <tr>
+          <th scope="row"><h4><strong>Alcohol Content:</strong> {{ $beer->alcohol_content }}%</h4></th>
+    
+        </tr>
+        <tr>
+          <th scope="row"><h4><strong>Category:</strong> {{ $beer->category }}</h4></th>
+    
+        </tr>
+      </tbody>
+    </table>
+    <p class="btn-holder"><a href="{{ url('add-to-cart/'.$beer->id) }}" class="btn btn-warning btn-block text-center" role="button">Add to cart</a> </p>
+  </div>
   
+  
+
+
+
+
+</div>
 </div>
 
 
