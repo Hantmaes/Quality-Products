@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>Company Lists</h1>
+<h1>Beer-Producers</h1>
 
 <div class="main-company">
 @foreach($companies as $company)

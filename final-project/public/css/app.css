@@ -10080,20 +10080,28 @@ h2 {
 .main-company .company-list img {
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 450px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
 }
 
 .detail-company {
+  display: flex;
   text-align: center;
-  margin: 50px 50px;
+  justify-content: space-around;
+  margin: 0 50px;
   line-height: 2em;
+  /*   .detail-company_1 {
+      margin-right: 100px;
+    } */
 }
 .detail-company img {
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 450px;
-  height: 600px;
+  width: 300px;
+  height: 300px;
+}
+.detail-company .detail-company_2 {
+  max-width: 1000px;
 }
 
 .new-container {
