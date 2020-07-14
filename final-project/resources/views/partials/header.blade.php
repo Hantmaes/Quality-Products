@@ -12,7 +12,7 @@
                     {{-- <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a> --}}
-                    <a href="/"><img id="logo-image" src="/images/logo.png" /></a>
+                    <a href="/"><img id="logo-image" src="/images/logo1.jpg" /></a>
 
                     <a class="" href="{{ url('/') }}">Home</a>
 
@@ -20,16 +20,9 @@
                 
                     <a href="{{ route('companies.index') }}">Beer-Producers</a>
 
-                   
-
                     <a href="{{ url('/contact') }}">Contact</a>
 
-                    <form class="form-inline my-2 my-lg-0" action="/" method="POST" role="search">
-                        {{ csrf_field() }}
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search your beer" aria-label="Search" name="q"
-                        placeholder="Search beer name">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+
 
                     <div class="cart-container form-inline my-2 my-lg-0">
 
@@ -87,10 +80,19 @@
              
                 
             </div>
+            
+
 
             
 
             <div class="login-header">
+
+                <form class="form-inline my-2 my-lg-0" action="/" method="POST" role="search" style="margin-right: 20px">
+                    {{ csrf_field() }}
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search your beer" aria-label="Search" name="q"
+                    placeholder="Search beer name">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
 
                 
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">

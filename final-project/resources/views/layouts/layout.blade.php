@@ -32,7 +32,7 @@
   <!-- Styles -->
   <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-  <link rel="icon" href="/watercolor-drink-5233841_1920_favicon.png" type="image/gif" sizes="32x32">
+  <link rel="icon" href="/images/favicon1.jpg" type="image/gif" sizes="32x32">
 
   @yield('head')
 
