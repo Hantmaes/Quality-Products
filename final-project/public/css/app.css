@@ -10103,7 +10103,8 @@ h2 {
 .new-container .carousel-inner {
   text-align: center;
   height: 500px;
-  background-color: #21d192;
+  background: url("../images/hops.jpg") rgba(0, 0, 0, 0.1);
+  background-size: cover;
   margin-top: 50px;
   margin-bottom: 100px;
 }
