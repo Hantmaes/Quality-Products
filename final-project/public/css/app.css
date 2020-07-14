@@ -10047,7 +10047,6 @@ h2 {
   margin-top: 50px;
   margin-bottom: 50px;
   width: 300px;
-  height: 600px;
 }
 
 .detail-beer {
@@ -10059,13 +10058,7 @@ h2 {
   margin-top: 50px;
   margin-bottom: 50px;
   width: 450px;
-  height: 600px;
 }
-.detail-beer #description-beers {
-  margin-right: 150px;
-  margin-left: 150px;
-}
-
 .main-company {
   display: flex;
   flex-wrap: wrap;
