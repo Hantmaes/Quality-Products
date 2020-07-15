@@ -41,9 +41,14 @@
           <th scope="row"><h4><strong>Category:</strong> {{ $beer->category }}</h4></th>
     
         </tr>
+
+        <tr>
+          <th scope="row"><p class="btn-holder"><a href="{{ url('add-to-cart/'.$beer->id) }}" class="btn btn-warning btn-block text-center" role="button">Add to cart</a> </p></th>
+    
+        </tr>
       </tbody>
     </table>
-    <p class="btn-holder"><a href="{{ url('add-to-cart/'.$beer->id) }}" class="btn btn-warning btn-block text-center" role="button">Add to cart</a> </p>
+    
   </div>
   
   

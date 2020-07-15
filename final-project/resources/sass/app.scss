@@ -89,6 +89,14 @@ h4 {
   background:rgba(0, 0, 0, 0.7);
 }
 
+.container {
+  background:rgba(0, 0, 0, 0.7);
+}
+
+.table td {
+  color: white;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -99,6 +107,7 @@ h4 {
     margin: 30px;
     text-align: center;
     line-height: 2em;
+    background:rgba(0, 0, 0, 0.7);
     img {
       margin-top: 50px;
       margin-bottom: 50px;
@@ -107,17 +116,32 @@ h4 {
     }
   }
 }
+
+.detail-beers{
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 800px) {
+
+    flex-direction: column;
+
+  }
+}
 .detail-beer {
   display: flex;
+
+
   flex-direction: column;
   text-align: center;
   margin: 0 50px;
   line-height: 2em;
 
-  .detail-beers {
+
+  .detail-beers_1 {
     margin-top: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    
   }
 
   img {
@@ -127,7 +151,12 @@ h4 {
   }
 
   .detail-beer_2 {
-    max-width: 800px;
+    
+    
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
   }
 
 }
@@ -135,11 +164,13 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
   .company-list {
     width: 450px;
     text-align: center;
     margin: 50px 50px;
     line-height: 2em;
+    background:rgba(0, 0, 0, 0.7);
     img {
       margin-top: 50px;
       margin-bottom: 50px;
@@ -228,6 +259,24 @@ h4 {
 .pay {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-row {
+  display: flex;
+}
+
+.links {
+  display: block;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
