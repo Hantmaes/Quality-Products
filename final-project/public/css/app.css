@@ -10063,6 +10063,14 @@ h4 {
   background: rgba(0, 0, 0, 0.7);
 }
 
+.container {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.table td {
+  color: white;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -10073,6 +10081,7 @@ h4 {
   margin: 30px;
   text-align: center;
   line-height: 2em;
+  background: rgba(0, 0, 0, 0.7);
 }
 .main .beer-list img {
   margin-top: 50px;
@@ -10109,6 +10118,7 @@ h4 {
   text-align: center;
   margin: 50px 50px;
   line-height: 2em;
+  background: rgba(0, 0, 0, 0.7);
 }
 .main-company .company-list img {
   margin-top: 50px;
@@ -10189,6 +10199,24 @@ h4 {
 .pay {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-row {
+  display: flex;
+}
+
+.links {
+  display: block;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* .review-form {
