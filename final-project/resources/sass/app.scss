@@ -116,17 +116,32 @@ h4 {
     }
   }
 }
+
+.detail-beers{
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 800px) {
+
+    flex-direction: column;
+
+  }
+}
 .detail-beer {
   display: flex;
+
+
   flex-direction: column;
   text-align: center;
   margin: 0 50px;
   line-height: 2em;
 
-  .detail-beers {
+
+  .detail-beers_1 {
     margin-top: 50px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    
   }
 
   img {
@@ -136,7 +151,12 @@ h4 {
   }
 
   .detail-beer_2 {
-    max-width: 800px;
+    
+    
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
   }
 
 }

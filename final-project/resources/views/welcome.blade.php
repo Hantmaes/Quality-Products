@@ -6,8 +6,8 @@
 <div id="age-verif">
   <div id="age-pop">
     <h2>Are you over 18?</h2>
-    <p id="age-yes">Yes</p>
-    <p id="age-no">No</p>
+    <p id="age-yes" style="color: black">Yes</p>
+    <p id="age-no" style="color: black">No</p>
   </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>

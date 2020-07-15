@@ -10089,6 +10089,16 @@ h4 {
   width: 300px;
 }
 
+.detail-beers {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .detail-beers {
+    flex-direction: column;
+  }
+}
+
 .detail-beer {
   display: flex;
   flex-direction: column;
@@ -10096,16 +10106,19 @@ h4 {
   margin: 0 50px;
   line-height: 2em;
 }
-.detail-beer .detail-beers {
+.detail-beer .detail-beers_1 {
   margin-top: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 .detail-beer img {
   width: 400px;
 }
 .detail-beer .detail-beer_2 {
-  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .main-company {
