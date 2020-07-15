@@ -65,6 +65,15 @@ nav {
 
 }
 
+.searchbar {
+  @media (min-width: 575px) {
+
+    width: 350px;
+
+  }
+  
+}
+
 
 h1 {
   color: white;
@@ -177,6 +186,16 @@ h4 {
       width: 300px;
       height: 300px; 
     }
+  }
+}
+
+.detail-companies{
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 800px) {
+
+    flex-direction: column;
+
   }
 }
 .detail-company {

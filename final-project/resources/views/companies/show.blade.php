@@ -4,6 +4,7 @@
 @section('content')
 
 <div class="detail-company">
+  <div class="detail-companies">
   <div class="detail-company_1">
   <h1>{{ $company->company }}</h1>
   <img src="{{ $company->company_logo }}">
@@ -33,6 +34,7 @@
   </table>
 </div>
 
+</div>
 </div>
 
 @endsection
