@@ -24,7 +24,7 @@
 
                     <form class="form-inline my-2 my-lg-0" action="/" method="POST" role="search" style="margin-right: 20px">
                         {{ csrf_field() }}
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search your beer" aria-label="Search" name="q"
+                        <input class="form-control mr-sm-2 searchbar" type="search" placeholder="Search your beer" aria-label="Search" name="q"
                         placeholder="Search beer name">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
@@ -51,7 +51,7 @@
                         </button>
                     <div class="dropdown-menu">
                         <div class="row total-header-section">
-                            <div class="col-lg-6 col-sm-6 col-6">
+                            <div class="col-lg-6 col-sm-6 col-6 cart-show">
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="badge badge-pill badge-danger">{{ count((array)session('cart')) }}</span>
                             </div>
     

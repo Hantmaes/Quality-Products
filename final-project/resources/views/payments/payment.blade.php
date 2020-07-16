@@ -6,13 +6,13 @@
 
     
 
-<div class="links" style="margin-top:20px">
+<div class="form" style="margin-top:20px">
       
       
     <form action="{{route('stripe.store')}}" method="post" id="payment-form" class="form-group">
         @csrf
 
-        <table id="cart" class="table table-hover table-condensed">
+        <table id="cart" class="table table-hover table-condensed col-md-3 col-lg-4 col-xl-3 mb-4">
           <thead>
           <tr>
               <th style="width:50%">Product</th>
@@ -60,7 +60,7 @@
           </tfoot>
       </table>
 
-      <div class="form-row">
+      <div class="form-row col-md-3 col-lg-4 col-xl-3 mb-4">
         <ul>
           <li>Name:{{ $request['name'] }}</li>
           <li>Address:{{ $request['address'] }}</li>
@@ -75,7 +75,7 @@
 
         </ul>
       </div>
-        <div class="form-row">
+        <div class="form-row col-md-3 col-lg-4 col-xl-3 mb-4">
 
             
             <label for="validationCustom01">Name on card </label>
