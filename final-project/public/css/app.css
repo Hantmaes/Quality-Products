@@ -10049,7 +10049,6 @@ nav .navbar-toggler {
 h1 {
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background: rgba(0, 0, 0, 0.7);
 }
 
 h2 {
@@ -10058,7 +10057,6 @@ h2 {
 
 h3 {
   color: white;
-  background: rgba(0, 0, 0, 0.7);
 }
 
 p {
@@ -10067,7 +10065,6 @@ p {
 
 h4 {
   color: white;
-  background: rgba(0, 0, 0, 0.7);
 }
 
 .container {
@@ -10243,6 +10240,10 @@ h4 {
 
 .table thead th {
   color: white;
+}
+
+.detail-beer {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* .review-form {
