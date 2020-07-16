@@ -93,7 +93,7 @@
         <h5 class="mb-1">Register for free</h5>
       </li>
       <li class="list-inline-item-1">
-        <a href="/home"  class="btn btn-outline-white btn-rounded">Sign up!</a>
+        <a href="/register"  class="btn btn-outline-white btn-rounded">Sign up!</a>
       </li>
     </ul>
     <hr />
