@@ -13,6 +13,7 @@ body {
   padding: 2em;
   background: url("../images/background.jpg");
   opacity: 0,8;
+  // background-color: blue;
 }
 
 #logo-image {
@@ -280,13 +281,14 @@ h4 {
   flex-direction: column;
 }
 
-.form-control {
-  display: flex;
-}
+// .form-control {
+//   display: flex;
+// }
 
-.form-row {
-  display: flex;
-}
+// .form-row {
+//   // display: flex;
+//   // background:rgba(0, 0, 0, 0.7);
+// }
 
 .links {
   display: block;
@@ -296,7 +298,26 @@ h4 {
 .form-group {
   display: flex;
   flex-wrap: wrap;
+  // background:rgba(0, 0, 0, 0.7);
+  // background-color: blue;
 }
+
+// form#payment-form {
+//   background: black;
+//   border: 3px solid blue;
+  
+// }
+
+.table {
+  thead th {
+    color: white;
+  }
+}
+
+// label {
+//   // Allow labels to use `margin` for spacing.
+//   margin: 0.0005px;
+// }
 
 
 
