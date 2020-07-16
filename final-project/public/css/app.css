@@ -9997,7 +9997,6 @@ body {
   margin: 0;
   padding: 2em;
   background: url("../images/background.jpg");
-  opacity: 0, 8;
 }
 
 #logo-image {
@@ -10067,10 +10066,6 @@ h4 {
   color: white;
 }
 
-.container {
-  background: rgba(0, 0, 0, 0.7);
-}
-
 .table td {
   color: white;
 }
@@ -10105,6 +10100,7 @@ h4 {
 
 .detail-beer {
   display: flex;
+  background: rgba(0, 0, 0, 0.7);
   flex-direction: column;
   text-align: center;
   margin: 0 50px;
@@ -10160,6 +10156,7 @@ h4 {
   justify-content: space-around;
   margin: 0 50px;
   line-height: 2em;
+  background: rgba(0, 0, 0, 0.7);
   /*   .detail-company_1 {
       margin-right: 100px;
     } */
@@ -10242,8 +10239,9 @@ h4 {
   color: white;
 }
 
-.detail-beer {
+.card {
   background: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 /* .review-form {
