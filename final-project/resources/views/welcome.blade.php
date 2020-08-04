@@ -20,28 +20,30 @@
   <script src="https://js.stripe.com/v3/"></script>
 
   <div class="container">
-    @if(isset($details))
-    <p> The Search results for your query <b> {{ $query }} </b> are :</p>
-    <h2>Sample Beer details</h2>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>Product Name</th>
-          <th>Company Name</th>
-        </tr>
-      </thead>
-      <tbody>
-        @foreach($details as $beer)
-        <tr>
-          <td><a href="beers/{{ $beer->id }}">{{$beer->product_name}}</a></td>
-          <td>{{$beer->company_name}}</td>
-        </tr>
-        @endforeach
-      </tbody>
-    </table>
-    @elseif(isset($message))
-    <p>{{ $message }}</p>
-    @endif
+    <div class="search">
+      @if(isset($details))
+      <p> The Search results for your query <b> {{ $query }} </b> are :</p>
+      <h2>Sample Beer details</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Company Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          @foreach($details as $beer)
+          <tr>
+            <td><a href="beers/{{ $beer->id }}">{{$beer->product_name}}</a></td>
+            <td>{{$beer->company_name}}</td>
+          </tr>
+          @endforeach
+        </tbody>
+      </table>
+      @elseif(isset($message))
+      <p>{{ $message }}</p>
+      @endif
+    </div>
 
     @if (Session::has('success'))
     

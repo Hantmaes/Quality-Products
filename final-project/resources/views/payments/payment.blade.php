@@ -124,6 +124,7 @@
     border: 2px solid blue;
   }
   .form-control {
+    display: flex;
     box-sizing: border-box;
     height: 40px;
     width: 600px;
@@ -149,13 +150,19 @@
     background-color: #fefde5 !important;
   }
   .form-row {
+    color: white;
     width: 65%;
     /* border: 2px solid blue; */
     float: left;
+    display: flex;
+    align-self: flex-start;
+    /* justify-content: flex-center; */
+    /* background:rgba(0, 0, 0, 0.7); */
   }
   form#payment-form {
     display: flex;
-    background: #f7f8f9;
+    /* background: #f7f8f9; */
+    background: rgba(0, 0, 0, 0.7);
     /* border: 2px solid blue; */
     height: 50%;
     padding: 50px;

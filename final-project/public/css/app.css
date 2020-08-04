@@ -104,6 +104,7 @@ address {
 ol,
 ul,
 dl {
+  color: white;
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -9996,7 +9997,6 @@ body {
   margin: 0;
   padding: 2em;
   background: url("../images/background.jpg");
-  opacity: 0, 8;
 }
 
 #logo-image {
@@ -10048,7 +10048,6 @@ nav .navbar-toggler {
 h1 {
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background: rgba(0, 0, 0, 0.7);
 }
 
 h2 {
@@ -10057,7 +10056,6 @@ h2 {
 
 h3 {
   color: white;
-  background: rgba(0, 0, 0, 0.7);
 }
 
 p {
@@ -10066,11 +10064,6 @@ p {
 
 h4 {
   color: white;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.container {
-  background: rgba(0, 0, 0, 0.7);
 }
 
 .table td {
@@ -10107,6 +10100,7 @@ h4 {
 
 .detail-beer {
   display: flex;
+  background: rgba(0, 0, 0, 0.7);
   flex-direction: column;
   text-align: center;
   margin: 0 50px;
@@ -10162,6 +10156,7 @@ h4 {
   justify-content: space-around;
   margin: 0 50px;
   line-height: 2em;
+  background: rgba(0, 0, 0, 0.7);
   /*   .detail-company_1 {
       margin-right: 100px;
     } */
@@ -10230,14 +10225,6 @@ h4 {
   flex-direction: column;
 }
 
-.form-control {
-  display: flex;
-}
-
-.form-row {
-  display: flex;
-}
-
 .links {
   display: block;
   flex-wrap: wrap;
@@ -10246,6 +10233,19 @@ h4 {
 .form-group {
   display: flex;
   flex-wrap: wrap;
+}
+
+.table thead th {
+  color: white;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.search {
+  background: rgba(0, 0, 0, 0.7);
 }
 
 /* .review-form {
